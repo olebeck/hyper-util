@@ -127,6 +127,7 @@ impl TcpKeepaliveConfig {
             target_os = "tvos",
             target_os = "watchos",
             target_os = "windows",
+            target_os = "vita",
         )
     )]
     fn ka_with_interval(ka: TcpKeepalive, interval: Duration, dirty: &mut bool) -> TcpKeepalive {
@@ -150,6 +151,7 @@ impl TcpKeepaliveConfig {
             target_os = "tvos",
             target_os = "watchos",
             target_os = "windows",
+            target_os = "vita",
         )
     ))]
     fn ka_with_interval(ka: TcpKeepalive, _: Duration, _: &mut bool) -> TcpKeepalive {
@@ -171,6 +173,7 @@ impl TcpKeepaliveConfig {
             target_os = "netbsd",
             target_os = "tvos",
             target_os = "watchos",
+            target_os = "vita",
         )
     )]
     fn ka_with_retries(ka: TcpKeepalive, retries: u32, dirty: &mut bool) -> TcpKeepalive {
@@ -193,6 +196,7 @@ impl TcpKeepaliveConfig {
             target_os = "netbsd",
             target_os = "tvos",
             target_os = "watchos",
+            target_os = "vita",
         )
     ))]
     fn ka_with_retries(ka: TcpKeepalive, _: u32, _: &mut bool) -> TcpKeepalive {
